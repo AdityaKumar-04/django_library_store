@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    max-width: 100%;
+    /* height: 100vh; */
+    background-image: url('library.jpg');
+    background-position: cover;
+    background-size: cover;
+    
+}
+section span h1{
+    text-align: center;
+    padding: 10px 0 0 0;
+    color: #fff;
+    font-size: 45px;
+    
+}
+.contener{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 75px; */
+    padding-bottom: 161px;
+}
+
+.contanin{
+    margin-top: 74px;
+    width: 42vw;
+    height: 65vh;
+    background-image: url('books.jpg');
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    margin-bottom: 75px;
+}
+.topic{
+    width: 27vw;
+    height: 36vh;
+    padding: 25px;
+    font-size: 23px;
+    color: #fff;
+    background-color: aqua;
+    word-wrap: break-word;
+    
+    
+}
+.topic h4{
+    margin-top: 25px;
+}
+.nav-box1{
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.first-ul{
+    display: flex;
+    width: 70vw;  
+    justify-content: space-evenly;
+    padding: 15px;
+}
+.first-ul .first-li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+    
+}
+
+.nav-three{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    margin-right: 15px;
+    background: rgb(29, 29, 29);
+}
+.nav-three a{
+    width: 5vw;
+    height: 5vh;
+    background-color: rgb(29, 29, 29);
+    outline: none;
+    border: none;
+    color: #fff;
+    display: none;
+}
+@media screen and (max-width:1100px) {
+    .section{
+        display: none;
+    }
+    .nav-three a{
+        display: block;
+        font-size: 30px;
+    }
+    
+}
+.all-section{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    
+    
+    
+}
+.content{
+    width: 53vw;
+    height: 65vh;
+    background-image: url(books.jpg);
+    background-position: content;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio{
+    width: 23vw;
+    font-size: 23px;
+    text-align: center;
+    padding: 25px;
+    background: transparent;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.bio p{
+    padding-bottom: 15px;
+    
+}
+@media screen and (max-width:661px) {
+    .content{
+        width: 94vw;
+    }
+    .contener{
+        justify-content: center;
+    }
+    .bio{
+        width: 68vw;
+        font-size: 24px;
+    }
+}
+.slide{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+}
+.left-slide{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all .4s ease;
+}
+.nav-slide{
+    width: 22vw;
+    height: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-ul{
+    height: 80%;
+}
+.second-li{
+    padding-bottom: 50px;
+    font-size: 30px;
+    list-style: none;
+    color: black;
+}
+.active{
+    transform: translateX(0);
+}
+.student{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    
+    
+}
+.students{
+    width: 37vw;
+    background-color: aqua;
+    margin-bottom: 20px;
+
+}
+.students h1{
+    text-align: center;
+    padding-bottom: 25px;
+}
+.roll{
+    width: 100%;
+    background-color: beige;
+    padding: 20px;
+}
+.roll input{
+    width: 100%;
+    font-size: 18px;
+    padding: 2px;
+}
+button{
+    text-align: center;
+    padding: 5px;
+    background-color: green;
+    color: #fff;
+    font-weight: 500;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+add books 
+.form-2{
+    display: none;
+    
+}
+.form-33{
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 25px;
+    display: grid;
+    justify-content: center;
+    background-color: rgb(34, 98, 121);
+}
+.section-book{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    
+}
+.wrapper{
+    width: 50vw;
+    
+    display: grid;
+    justify-content: center;
+    padding: 0px 25px 25px 25px;
+}
+
+.click{
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+}
+.click span{
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 15px;
+    margin-left: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.click span a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.form-1{
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 25px;
+    display: grid;
+    justify-content: center;
+    background-color: rgb(34, 98, 121);
+}
+.form-1 span{
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+}
+.form-2 span{
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+}
+.form-box{
+    width: 100%;
+    padding: 13px;
+
+}
+.form-box label{
+    font-size: 18px;
+}
+.form-box input{
+    width: 100%;
+    font-size: 18px;
+}
+.btn-1{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
+.btn-1 span{
+    background-color: #000000;
+    font-size: 20px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 15px;
+}
+.btn-1 span a{
+    
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+.search{
+    width: 30vw;
+    background-color: aqua;
+
+}
+.search input{
+    width: 100%;
+    padding: 15px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    
+}
+.first-tr{
+    height: 25px;
+    background-color: rgb(181, 243, 243);
+}
+td{
+    color: #fff;
+    background-color: rgb(158, 158, 158);
+}

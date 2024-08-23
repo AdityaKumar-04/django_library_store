@@ -1,0 +1,35 @@
+{% extends './base.html' %}
+
+{% block content %}
+<div class="section-back">
+    <!-- <div class="search">
+        <input type="text" name="search" placeholder="SEARCH Student" />
+    </div> -->
+    <div class="table">
+        <table>
+            <tr class="first-tr">
+              <th style="font-size: 18px;">Student</th>
+              <th style="font-size: 18px;">Student Name</th>
+              <th style="font-size: 18px;">Student Address</th>
+              <th style="font-size: 18px;">Book Title</th>
+              <th style="font-size: 18px;">Books price</th>
+              
+              <th>Delete</th>
+            </tr>
+            {% for a in data %}
+            <tr>
+              <td style="padding: 10px; font-size: 18px;">{{a.student_roll}}</td>
+              <td style="padding: 10px; font-size: 18px;">{{a.student_name}}</td>
+              <td style="padding: 10px; font-size: 18px;">{{a.student_address}}</td>
+              <td style="padding: 10px; font-size: 18px;">{{a.booktiti}}</td>
+              <td style="padding: 10px; font-size: 18px;">{{a.bookpricet}}</td>
+              
+              <td style="padding: 10px; font-size: 18px;"> <a href="/Delete/{{a.id}}"><i class="fa-solid fa-trash-can"></i></a> </td>
+            </tr>
+            {% endfor %}
+          </table>
+    </div>
+</div>
+
+
+{% endblock %}
